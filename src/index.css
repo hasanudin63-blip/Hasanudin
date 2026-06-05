@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide all generic sections except the target A4 sheet */
+  .no-print, 
+  header, 
+  footer, 
+  section:not(#workspace),
+  #app-header,
+  #hero-banner,
+  #stats-counter,
+  #fitur,
+  #perbandingan,
+  #faq,
+  #toast-notify,
+  #workspace > div > div:first-child, /* control button bar */
+  #workspace > div > div:last-child { /* chat refine box */
+    display: none !important;
+  }
+
+  body, html {
+    background-color: white !important;
+    color: black !important;
+    font-size: 12pt !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #workspace {
+    background-color: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #a4-document-sheet {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    font-size: 11pt !important;
+    line-height: 1.6 !important;
+  }
+
+  h1 {
+    font-size: 20pt !important;
+    margin-top: 15pt !important;
+    margin-bottom: 10pt !important;
+    page-break-after: avoid;
+  }
+
+  h2 {
+    font-size: 16pt !important;
+    margin-top: 14pt !important;
+    margin-bottom: 8pt !important;
+    border-left: 3px solid #1e3a8a !important;
+    padding-left: 8px !important;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    font-size: 13pt !important;
+    margin-top: 12pt !important;
+    margin-bottom: 6pt !important;
+    page-break-after: avoid;
+  }
+
+  p, li, td {
+    font-size: 10.5pt !important;
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+}
+

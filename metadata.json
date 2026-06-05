@@ -1,0 +1,6 @@
+{
+  "name": "Siap Guru",
+  "description": "Platform AI untuk membuat RPP, Modul Ajar, Asesmen, dan LKPD Kurikulum Merdeka secara instan dalam hitungan menit.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
